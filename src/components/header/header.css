@@ -1,3 +1,5 @@
+
+
 header{
     display: flex;
     flex-direction: row;
@@ -6,29 +8,13 @@ header{
     position: fixed;
     z-index: 1000;    
     align-items: center;
-    justify-content: center;
+    justify-content:space-between;
     border: 1px solid black; 
 }
 
 .LogoNav{    
     display: flex;
     width: 60px;
-    padding: 5px;
-    border-radius: 100%;
-    border: 1px solid black;
-}
-
-
-.BotonesNav{
-    display: flex;
-    text-decoration: none;
-    font-family: 'Jost', sans-serif;;
-    color: #ede6db;
-    border: 1px solid black;
-}
-
-
-.carrito-usuario{
     border: 1px solid black;
 }
 
@@ -52,19 +38,32 @@ header label:hover {
 
 .menu{
     display: flex;
+    align-content: space-between;
+    border: 1px solid red;
+    justify-content: center;
+    width: 100%;
 }
 
 .menu ul {
-    margin: 0;
     list-style: none;
     padding: 0;
     display: flex;
+    border: 1px solid yellow;
 
 }
 
+.BotonesNav{
+    align-self: center;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;;
+    color: #ede6db;
+    border: 1px solid blue;
+}
+
+
 .menu li:hover {
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 20%;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10%;
 
 }
 
@@ -74,6 +73,10 @@ header label:hover {
     color: #fff;
     text-decoration: none;
 
+}
+
+.CarritoUsuario {
+    justify-self: flex-end;
 }
 
 @media (max-width:768px){
@@ -110,3 +113,4 @@ header label:hover {
         align-items: center;
     }
 }
+
