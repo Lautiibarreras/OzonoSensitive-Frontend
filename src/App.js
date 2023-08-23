@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/header/header.jsx';
 import Slider from './components/slider/slider.jsx';
 import Productos from './components/productos/productos.jsx'
+import Carrito from './components/carrito/carrito.jsx';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header></Header>
       <Slider></Slider>
       <Productos></Productos>
+      <Carrito></Carrito>
       
 
 
