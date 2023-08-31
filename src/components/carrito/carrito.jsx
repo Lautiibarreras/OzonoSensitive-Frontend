@@ -5,62 +5,79 @@ import IMAGEN from '../../multimedia/IMAGEN.png';
 export default function Carrito() {
 
     return (
-        
-        <div class="container">
-
-            <div class="modal/ active" id="jsModalCarrito">
-                <div class="modal__container">
-                    <button type="button" class="modal__close fa-solid fa-xmark jsModalClose "></button>
-    
-                    <div class="modal__info">
-                        <div class="modal__header">
-                            <h2><i class="fa-brands fa-opencart"></i>Carrito</h2>
+        <section>
+        <div class="card">
+            <div class="row">
+                <div class="col-md-8 cart">
+                    <div class="title">
+                        <div class="row">
+                            <div class="col"><h4><b>Carrito</b></h4></div>
+                            <div class="col align-self-center text-right text-muted">3 Productos</div>
                         </div>
-    
-                        <div class="modal__body">
-                            <div class="modal__list">
-                                <div class="modal__item">
-                                    <div class="modal__thumb">
-                                        <img src={IMAGEN} alt="Naranja"/>
-                                    </div>
-                                    <div class="modal__text-product">
-                                        <p>Naranja</p>
-                                        <p><strong>$9.00 / kg</strong></p>
-                                    </div>
-                                </div>
-    
-    
-                                <div class="modal__item">
-                                    <div class="modal__thumb">
-                                        <img src={IMAGEN} alt="Naranja"/>
-                                    </div>
-                                    <div class="modal__text-product">
-                                        <p>Manzana</p>
-                                        <p><strong>$5.00 / kg</strong></p>
-                                    </div>
-                                </div>
-    
+                    </div>    
+                    <div class="row border-top border-bottom">
+                        <div class="row main align-items-center">
+                            <div class="col-2"><img class="img-fluid" src={IMAGEN}/></div>
+                            <div class="col">
+                                <div class="row text-muted">Tipo</div>
+                                <div class="row">Descripcion</div>
                             </div>
-                        </div>
-    
-                        <div class="modal__footer">
-                            <div class="modal__list-price">
-                                <ul>
-                                    <li>Subtotal: <strong>$14.00</strong></li>
-                                </ul>
-                                <h4 class="modal__total-cart"> Total: $14.00</h4>
+                            <div class="col">
+                                <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
                             </div>
-    
-                            <div class="modal__btns">
-                                <a href="#" class="btn-border">Ir al carrito</a>
-                                <a href="#" class="btn-primary">Comprar Ahora</a>
-                            </div>
+                            <div class="col">$ 44.00 <span class="close">&#10005;</span></div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="row main align-items-center">
+                            <div class="col-2"><img class="img-fluid" src={IMAGEN}/></div>
+                            <div class="col">
+                                <div class="row text-muted">Tipo</div>
+                                <div class="row">Descripcion</div>
+                            </div>
+                            <div class="col">
+                                <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
+                            </div>
+                            <div class="col">$ 44.00 <span class="close">&#10005;</span></div>
+                        </div>
+                    </div>
+                    <div class="row border-top border-bottom">
+                        <div class="row main align-items-center">
+                            <div class="col-2"><img class="img-fluid" src={IMAGEN}/></div>
+                            <div class="col">
+                                <div class="row text-muted">Tipo</div>
+                                <div class="row">Descripcion</div>
+                            </div>
+                            <div class="col">
+                                <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
+                            </div>
+                            <div class="col">$ 44.00 <span class="close">&#10005;</span></div>
+                        </div>
+                    </div>
+                    <div class="back-to-shop"><a href="#">&leftarrow;</a><span class="text-muted">Volver</span></div>
+                </div>
+                <div class="col-md-4 summary">
+                    <div><h5><b>Resumen</b></h5></div>
+                    <div class="row">
+                        <div class="col" style={{'padding-left':'0;'}}>Total de los productos</div>
+                        <div class="col text-right">$ 132.00</div>
+                    </div>
+                    <form>
+                        <p>ENVIO</p>
+                        <select><option class="text-muted">Envio normal- $ 5.00</option></select>
+                        <p>CODIGO POSTAL</p>
+                        <input id="code" placeholder="Enter your code"/>
+                    </form>
+                    <div class="row" style={{'border-top': '1px solid rgba(0,0,0,.1);', 'padding': '2vh 0;'}}>
+                        <div class="col">TOTAL</div>
+                        <div class="col text-right">$ 137.00</div>
+                    </div>
+                    <button class="btn">CHECKOUT</button>
                 </div>
             </div>
-    
+            
         </div>
-    
+        </section>
+        
     )
 }

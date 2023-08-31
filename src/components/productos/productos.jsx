@@ -8,7 +8,6 @@ export default function Productos() {
     return (
         <div class="containerProductos">
 
-            <h1 class="title">Productos</h1>
     
             <div class="product-grid">
                 <div class="product-grid__item">
