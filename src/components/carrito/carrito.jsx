@@ -23,9 +23,9 @@ export default function Carrito() {
                                 <div class="row">Descripcion</div>
                             </div>
                             <div class="col">
-                                <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
+                                <button href="#">-</button><a href="#" class="border">1</a><button href="#">+</button>
                             </div>
-                            <div class="col">$ 44.00 <span class="close">&#10005;</span></div>
+                            <div class="col">$ 44.00 <button class="close">&#10005;</button></div>
                         </div>
                     </div>
                     <div class="row">
@@ -35,10 +35,10 @@ export default function Carrito() {
                                 <div class="row text-muted">Tipo</div>
                                 <div class="row">Descripcion</div>
                             </div>
-                            <div class="col">
-                                <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
+                            <div class="col" >
+                                <button href="#">-</button><a href="#" class="border">1</a><button href="#">+</button>
                             </div>
-                            <div class="col">$ 44.00 <span class="close">&#10005;</span></div>
+                            <div class="col">$ 44.00 <button class="close">&#10005;</button></div>
                         </div>
                     </div>
                     <div class="row border-top border-bottom">
@@ -49,12 +49,12 @@ export default function Carrito() {
                                 <div class="row">Descripcion</div>
                             </div>
                             <div class="col">
-                                <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
+                                <button href="#">-</button><a href="#" class="border">1</a><button href="#">+</button>
                             </div>
-                            <div class="col">$ 44.00 <span class="close">&#10005;</span></div>
+                            <div class="col">$ 44.00 <button class="close">&#10005;</button></div>
                         </div>
                     </div>
-                    <div class="back-to-shop"><a href="#">&leftarrow;</a><span class="text-muted">Volver</span></div>
+                    <div class="back-to-shop"><a href="#" style={{textDecoration:'none'}}>←</a><span class="text-muted">Volver</span></div>
                 </div>
                 <div class="col-md-4 summary">
                     <div><h5><b>Resumen</b></h5></div>
@@ -72,7 +72,7 @@ export default function Carrito() {
                         <div class="col">TOTAL</div>
                         <div class="col text-right">$ 137.00</div>
                     </div>
-                    <button class="btn">CHECKOUT</button>
+                    <button class="btn">CONFIRMAR</button>
                 </div>
             </div>
             
