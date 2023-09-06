@@ -37,11 +37,11 @@ section+{
     }
 }
 .summary{
-    background-color: #ddd;
+    background-color: #1d5c63;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     padding: 4vh;
-    color: rgb(65, 65, 65);
+    color: #ddd;
 }
 @media(max-width:767px){
     .summary{

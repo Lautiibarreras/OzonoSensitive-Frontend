@@ -3,7 +3,9 @@ import Header from './components/header/header.jsx';
 import Slider from './components/slider/slider.jsx';
 import Productos from './components/productos/productos.jsx'
 import Carrito from './components/carrito/carrito.jsx';
-import CuentaDeUsuario from './components/Usuario/CuentaDeUsuario.jsx';
+import Login from './components/Usuario/Login.jsx';
+import SignUp from './components/Usuario/SignUp.jsx';
+
 
 function App() {
   return (
@@ -13,7 +15,8 @@ function App() {
       <Slider></Slider>
       <Productos></Productos>
       <Carrito></Carrito>
-      <CuentaDeUsuario></CuentaDeUsuario>
+      <Login></Login>
+      <SignUp></SignUp>
       
 
 
